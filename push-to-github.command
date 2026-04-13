@@ -12,8 +12,8 @@ export GIT_SSH_COMMAND="ssh -i $(pwd)/.ssh/id_ed25519 -o IdentitiesOnly=yes -o S
 rm -f .git/index.lock
 
 # Remote setzen
-git remote set-url origin git@github.com:pmstonechurch-boop/caritas-muenchen-karte.git 2>/dev/null || \
-git remote add origin git@github.com:pmstonechurch-boop/caritas-muenchen-karte.git
+git remote set-url origin git@github.com:pmstonechurch-boop/caritas-karte-muenchen.git 2>/dev/null || \
+git remote add origin git@github.com:pmstonechurch-boop/caritas-karte-muenchen.git
 
 # Änderungen committen und pushen
 git add -A
