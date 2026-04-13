@@ -15,6 +15,10 @@ rm -f .git/index.lock
 git remote set-url origin git@github.com:pmstonechurch-boop/caritas-karte-muenchen.git 2>/dev/null || \
 git remote add origin git@github.com:pmstonechurch-boop/caritas-karte-muenchen.git
 
+# Erst remote Änderungen holen und rebasen
+echo "⬇️  Hole remote Änderungen..."
+git pull --rebase origin main
+
 # Änderungen committen und pushen
 git add -A
 git status
